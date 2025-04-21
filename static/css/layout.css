@@ -3,11 +3,9 @@
 *:after {
 	box-sizing: border-box;
 	font-family: inherit;
-	max-width: 100%;
 }
 
 main {
-	width: 100%;
 	max-width: 42rem;
 	margin: 6rem auto;
 	padding: 0 1rem;
@@ -17,12 +15,9 @@ main {
 	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: auto 1fr auto;
-	min-height: 100vh;
 }
 
 img {
-	width: 100%;
-	max-width: 100%;
 	height: auto;
 }
 
@@ -45,23 +40,6 @@ li {
 	margin-bottom: 0.25rem;
 }
 
-.posts-list {
-	list-style-type: none;
-	padding: 0;
-
-	li {
-		margin-bottom: 6rem;
-	}
-
-	img+h2 {
-		margin-top: 1rem;
-	}
-
-	a {
-		display: block;
-	}
-}
-
 .post-footer__categories {
 	padding: 0;
 	display: flex;
@@ -75,7 +53,6 @@ li {
 }
 
 .post-footer a {
-	background-color: var(--lightAccent);
 	padding: .5rem 0.75rem;
 	text-transform: uppercase;
 	font-family: var(--primaryFont);
