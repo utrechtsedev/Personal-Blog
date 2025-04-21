@@ -5,8 +5,8 @@
 </script>
 
 <div class="mt-8 flex justify-center">
-	<!-- Main container with increased width and significantly increased height -->
-	<div class="relative w-[90%] h-24 flex overflow-hidden">
+	<!-- Main container with increased width and height -->
+	<div class="relative w-[90%] h-24 flex">
 		<!-- Gradient top border -->
 		<div
 			class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-400 to-transparent z-10"
@@ -19,9 +19,9 @@
 		<div class="absolute top-0 left-0 w-full h-full pointer-events-none">
 			<div class="dotted-pattern"></div>
 		</div>
-		<!-- Inner content container with more compact spacing -->
+		<!-- Inner content container -->
 		<div class="w-[60%] mx-auto flex items-center justify-between">
-			<!-- Left side - Profile with tighter spacing -->
+			<!-- Left side - Profile -->
 			<div class="flex items-center z-20">
 				<div class="h-14 w-14 rounded-full overflow-hidden bg-gray-200">
 					<img
@@ -47,13 +47,33 @@
 					</div>
 				</div>
 			</div>
-			<!-- Right side - Navigation with tighter spacing -->
-			<div class="flex space-x-9 z-20">
-				<Home class="h-7 w-7 text-gray-600 hover:text-gray-900 cursor-pointer" />
-				<User class="h-7 w-7 text-gray-600 hover:text-gray-900 cursor-pointer" />
-				<ShoppingBag class="h-7 w-7 text-gray-600 hover:text-gray-900 cursor-pointer" />
-				<Folder class="h-7 w-7 text-gray-600 hover:text-gray-900 cursor-pointer" />
-				<Phone class="h-7 w-7 text-gray-600 hover:text-gray-900 cursor-pointer" />
+			<!-- Right side - Navigation -->
+			<div class="flex space-x-6 z-20">
+				<div class="tooltip tooltip-bottom" data-tip="Home">
+					<a href="/" class="nav-btn-circle bg-transparent hover:bg-gray-900/30">
+						<Home class="w-7 h-7 text-gray-600" />
+					</a>
+				</div>
+				<div class="tooltip tooltip-bottom" data-tip="Profiel">
+					<a href="/profile" class="nav-btn-circle bg-transparent hover:bg-gray-900/30">
+						<User class="w-7 h-7 text-gray-600" />
+					</a>
+				</div>
+				<div class="tooltip tooltip-bottom" data-tip="Winkel">
+					<a href="/shop" class="nav-btn-circle bg-transparent hover:bg-gray-900/30">
+						<ShoppingBag class="w-7 h-7 text-gray-600" />
+					</a>
+				</div>
+				<div class="tooltip tooltip-bottom" data-tip="Projecten">
+					<a href="/projects" class="nav-btn-circle bg-transparent hover:bg-gray-900/30">
+						<Folder class="w-7 h-7 text-gray-600" />
+					</a>
+				</div>
+				<div class="tooltip tooltip-bottom" data-tip="Contact">
+					<a href="/contact" class="nav-btn-circle bg-transparent hover:bg-gray-900/30">
+						<Phone class="w-7 h-7 text-gray-600" />
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -70,6 +90,23 @@
 		background-image: radial-gradient(rgba(0, 0, 0, 0.18) 0.9px, transparent 0.5px);
 		background-size: 5px 5px;
 		mask-image: radial-gradient(ellipse at 50% 0%, black 40%, transparent 90%);
+	}
+	/* Custom larger circle buttons for navigation */
+	.nav-btn-circle {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 3rem; /* Increased from default circle size */
+		height: 3rem; /* Increased from default circle size */
+		border-radius: 50%;
+		transition: background-color 0.3s ease;
+	}
+	/* Make tooltip appear below the navbar */
+	.tooltip-bottom:before {
+		top: 60px !important; /* Adjusted to account for larger buttons */
+	}
+	.tooltip-bottom:after {
+		top: 52px !important; /* Adjusted to account for larger buttons */
 	}
 </style>
 
