@@ -8,7 +8,7 @@
 	<h2>{$page.status}</h2>
 	<p class="subhead">{$page.error.message}</p>
 
-	<p><strong>Sorry!</strong> Maybe try one of these links?</p>
+	<p><strong>Sorry!</strong> Deze pagina bestaat niet</p>
 	<ul>
 		<li><a href="/">Home</a></li>
 	</ul>

@@ -1,6 +1,6 @@
 <script>
 	import '../lib/app.css';
-	import { Home, User, ShoppingBag, Folder, GithubIcon } from 'lucide-svelte';
+	import { Home, ShoppingBag, Folder, GithubIcon } from 'lucide-svelte';
 	import { siteAuthor, available } from '$lib/config';
 	import '@fontsource-variable/inter';
 	import me from '$lib/image/me.jpg';
@@ -106,21 +106,11 @@
 		top: 52px !important; /* Adjusted to account for larger buttons */
 	}
 	a,
-	button {
-		outline: none !important;
-		box-shadow: none !important;
-		-webkit-tap-highlight-color: transparent;
-	}
-
 	a:focus,
-	button:focus,
-	a:focus-visible,
-	button:focus-visible {
+	a:focus-visible {
 		outline: none !important;
 		box-shadow: none !important;
 		border: none !important;
-		ring: 0 !important;
-		ring-offset: 0 !important;
 	}
 
 	/* This ensures DaisyUI or other frameworks don't override our settings */

@@ -35,7 +35,6 @@
 			justify-content: center;
 			width: 2em;
 			height: 2em;
-			font-family: var(--primaryFont);
 			font-weight: bold;
 			transition: background .1s;
 

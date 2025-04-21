@@ -15,12 +15,12 @@
 	<div class="flex flex-col items-center">
 		<div class="relative">
 			<div
-				class="absolute w-full h-full top-0 left-0 rounded-full blur-xl bg-blue-400 opacity-60 -z-10 transform scale-75 translate-y-4"
+				class="absolute w-full h-full top-0 left-0 rounded-full blur-xl bg-blue-400 opacity-60 dark:opacity-70 -z-10 transform scale-75 translate-y-4"
 			></div>
 			<img class="w-50 relative z-10 rounded-full" src={me} />
 		</div>
-		<p class="text-center text-2xl font-bold">Wat kan ik <br /> voor jou doen?</p>
-		<p class="text-center">
+		<p class="text-center text-2xl font-bold dark:text-white">Wat kan ik <br /> voor jou doen?</p>
+		<p class="text-center dark:text-gray-300">
 			Mijn combinatie van expertise en communicatie zorgt voor oplossingen, begrijpelijke uitleg en
 			persoonlijke aandacht voor jouw project.
 		</p>
@@ -29,21 +29,21 @@
 	<div class="flex flex-col mt-5 md:flex-row gap-6 max-w-6xl mx-auto">
 		<!-- First Card -->
 		<div
-			class="w-full md:w-1/2 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+			class="w-full md:w-1/2 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl dark:hover:shadow-indigo-900/20"
 		>
 			<div
-				class="h-full relative bg-gradient-to-br from-slate-300/40 to-gray-300/40 backdrop-blur-sm border border-gray-300 p-6 flex flex-col"
+				class="h-full relative bg-gradient-to-br from-slate-300/40 to-gray-300/40 dark:from-slate-700/40 dark:to-gray-800/40 backdrop-blur-sm border border-gray-300 dark:border-gray-700 p-6 flex flex-col"
 			>
 				<!-- Background Effect -->
 				<div
-					class="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-slate-400/30 blur-xl"
+					class="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-slate-400/30 dark:bg-slate-400/40 blur-xl"
 				></div>
 				<div
-					class="absolute -bottom-20 -left-20 w-40 h-40 rounded-full bg-gray-400/30 blur-xl"
+					class="absolute -bottom-20 -left-20 w-40 h-40 rounded-full bg-gray-400/30 dark:bg-indigo-400/30 blur-xl"
 				></div>
 				<!-- Content -->
-				<h2 class="text-2xl font-bold mb-3 relative z-10">Front-end Development</h2>
-				<p class="mb-6 relative z-10">
+				<h2 class="text-2xl font-bold mb-3 relative z-10 dark:text-white">Front-end Development</h2>
+				<p class="mb-6 relative z-10 dark:text-gray-300">
 					Creatie van responsieve, interactieve gebruikersinterfaces met moderne frameworks.
 				</p>
 				<!-- Logo Placeholders -->
@@ -65,19 +65,21 @@
 		</div>
 		<!-- Second Card -->
 		<div
-			class="w-full md:w-1/2 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl"
+			class="w-full md:w-1/2 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl dark:hover:shadow-blue-900/20"
 		>
 			<div
-				class="h-full relative bg-gradient-to-br from-zinc-300/40 to-stone-300/40 backdrop-blur-sm border border-gray-300 p-6 flex flex-col"
+				class="h-full relative bg-gradient-to-br from-zinc-300/40 to-stone-300/40 dark:from-zinc-700/40 dark:to-stone-800/40 backdrop-blur-sm border border-gray-300 dark:border-gray-700 p-6 flex flex-col"
 			>
 				<!-- Background Effect -->
-				<div class="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-zinc-400/30 blur-xl"></div>
 				<div
-					class="absolute -bottom-20 -left-20 w-40 h-40 rounded-full bg-stone-400/30 blur-xl"
+					class="absolute -top-20 -right-20 w-40 h-40 rounded-full bg-zinc-400/30 dark:bg-zinc-400/40 blur-xl"
+				></div>
+				<div
+					class="absolute -bottom-20 -left-20 w-40 h-40 rounded-full bg-stone-400/30 dark:bg-blue-500/30 blur-xl"
 				></div>
 				<!-- Content -->
-				<h2 class="text-2xl font-bold mb-3 relative z-10">Back-end Solutions</h2>
-				<p class="mb-6 relative z-10">
+				<h2 class="text-2xl font-bold mb-3 relative z-10 dark:text-white">Back-end Solutions</h2>
+				<p class="mb-6 relative z-10 dark:text-gray-300">
 					Bouwen van robuuste API's en server-side logica voor webapplicaties.
 				</p>
 				<!-- Logo Placeholders -->
@@ -111,3 +113,4 @@
 		position: relative;
 	}
 </style>
+
