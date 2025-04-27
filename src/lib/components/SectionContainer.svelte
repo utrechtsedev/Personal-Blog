@@ -4,8 +4,9 @@
 	export let extraClass = ''; // Additional classes if needed
 </script>
 
-<div class="section-container-wrapper flex justify-center w-full">
-	<div class="section-container relative w-[95%] md:w-[50%] {padding} {extraClass}">
+<!-- Fixed width container to ensure consistent alignment -->
+<div class="fixed-width-container mx-auto">
+	<div class="section-container relative {padding} {extraClass}">
 		<!-- Left border with improved gradient -->
 		<div class="absolute top-0 left-0 h-full w-px left-border-gradient"></div>
 		<!-- Right border with improved gradient -->
@@ -24,6 +25,18 @@
 </div>
 
 <style>
+	/* Fixed width container ensures all sections have identical width */
+	.fixed-width-container {
+		width: 95%;
+		max-width: 800px; /* Adjust this value as needed for your design */
+	}
+	
+	/* Container takes the full width of its parent */
+	.section-container {
+		width: 100%;
+		min-height: 100px;
+	}
+	
 	.section-dotted-pattern {
 		position: absolute;
 		top: 0;
@@ -33,10 +46,7 @@
 		background-size: 5px 5px;
 		mask-image: radial-gradient(ellipse at center, black 40%, transparent 90%);
 	}
-	.section-container {
-		min-height: 100px;
-	}
-
+	
 	/* Custom gradient borders with more subtle fading */
 	.left-border-gradient {
 		background: linear-gradient(
@@ -46,7 +56,6 @@
 			rgba(156, 163, 175, 0.05) 100%
 		);
 	}
-
 	.right-border-gradient {
 		background: linear-gradient(
 			to bottom,
@@ -55,7 +64,6 @@
 			rgba(156, 163, 175, 0.05) 100%
 		);
 	}
-
 	.bottom-border-gradient {
 		background: linear-gradient(
 			to right,
@@ -63,5 +71,12 @@
 			rgba(156, 163, 175, 0.8) 50%,
 			rgba(156, 163, 175, 0.05) 100%
 		);
+	}
+
+	/* Media query for responsive behavior while maintaining alignment */
+	@media (max-width: 768px) {
+		.fixed-width-container {
+			width: 95%;
+		}
 	}
 </style>

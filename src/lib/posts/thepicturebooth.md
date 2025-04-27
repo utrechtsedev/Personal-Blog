@@ -28,8 +28,8 @@ Dus ik moest een fullstack app opleveren die veelzijdig en gepersonaliseerd was,
 * PDFKit - Snel en efficient PDF's genereren voor facuren
 *Mijn afhankelijkheid van externe dependencies probeer ik zoveel mogelijk te minimaliseren, dit draagt bij aan een hogere stabiliteit, veiligheid en langdurig onderhoudbaarheid van het project.*
 
+<img src="/images/thepicturebooth-dashboard.avif">
 
-(screenshot dashboard)
 ## De functionaliteiten
 Deze app bevat zowel een dashboard als een storefront voor klanten. De functionaliteiten kunnen we groeperen onder deze 4 groepen:
 
@@ -38,16 +38,25 @@ Deze app bevat zowel een dashboard als een storefront voor klanten. De functiona
 * Betaalstatus, boekingstatus en aanbetalingen beheren per boeking.
 * Meldingen ontvangen via de mail wanneer nieuwe boekingen binnenkomen + bevestigingsmail naar de klant.
 * Het kunnen accepteren/aannemen/annuleren van boekingen + bevestiging/annuleringsmail naar de klant.
+
+<img src="/images/thepicturebooth-boekingen.avif">
+
 ### Klantbeheer
 * Het  bekijken, aanmaken, wijzigen en verwijderen van boekingen.
 * Gedetailleerde overzicht van het klantenbestand (met metrics zoals omzet per klant, terugkeerpercentage en dergelijken).
 * Direct factureren en mailen via de app.
 * Klantgegevens/bedrijfsgegevens inzien en makkelijk kunnen opvolgen na een boeking.
+
+<img src="/images/thepicturebooth-klanten.avif">
+
 ### Financieel beheer/overzicht
 * Complete omzet- en winstrapportages.
 * Kosten medewerkers bijhouden, medewerkers kunnen zelf kosten aanmaken en bonnetjes/facturen bijvoegen.
 * Facturen en offertes inzien, wijzigen en aanmaken.
 * BTW overzichten en andere belastingtechnische berekeningen.
+
+<img src="/images/thepicturebooth-financien.avif">
+
 ### Applicatie
 * Mogelijkheid om accounts voor medewerkers aan te maken en te beheren.
 * Mobile-first applicatie omdat deze veel onderweg en onsite word geraadpleegd
@@ -82,6 +91,5 @@ Omdat ik solo een hele fullstack enterprise-grade app heb gebouwd, ben ik nu een
 Op dit moment is de website live en in gebruik, feature requests worden gedaan, bugs worden gemeld, en zo wil ik beetje bij beetje terecht komen bij een perfect product voor de klant. Dit is een lang proces, hoewel het al een stabiel en goed product is die op de klant is afgestemd, kan het altijd beter. Ik neem aan dat benodigdheden van het bedrijf ook veranderen naarmate ze groeien. 
 
 ## Hoe kan jij meer leren of bijdragen? 
-Het project is open source. Pull requests zijn altijd welkom. Je bent vrij om dit project te forken en te gebruiken voor jezelf of eigen klanten. Er staat een GPLv3 licentie op, dat betekend dat je vrij bent om het te gebruiken op welke manier je wilt, zolang verbeteringen, optimalisaties en features die je toevoegt ook open-sourced. Dit vind ik eerlijk aangezien ik hier zelf ook tientallen uren in heb gestoken en het vrij heb gedeeld. Hier is een (link naar het project)[https://github.com/utrechtsedev/thepicturebooth]
-
+Het project is open source. Pull requests zijn altijd welkom. Je bent vrij om dit project te forken en te gebruiken voor jezelf of eigen klanten. Er staat een GPLv3 licentie op, dat betekend dat je vrij bent om het te gebruiken op welke manier je wilt, zolang verbeteringen, optimalisaties en features die je toevoegt ook open-sourced. Dit vind ik eerlijk aangezien ik hier zelf ook tientallen uren in heb gestoken en het vrij heb gedeeld. Hier is een <a href="https://github.com/utrechtsedev/thepicturebooth]" style="color: blue;">link naar het project.</a>
 Bedankt voor het lezen en tot de volgende keer!
