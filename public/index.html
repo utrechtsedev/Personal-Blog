@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Ik schrijf woorden die alleen computers begrijpen!">
+    <meta name="keywords"
+        content="Abdel, Abdel Ichou, Software Engineer, Web Developer, Full Stack, Backend Developer, Manchester, C#, CSharp, JavaScript, TypeScript, Terraform, Docker, Kubernetes, T3 Support">
+    <meta name="author" content="Abdel Ichou">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aichou.nl/">
+    <meta property="og:title" content="aichou 桜">
+    <meta property="og:description" content="Ik schrijf woorden die alleen computers begrijpen!">
+    <meta property="og:image" content="https://aichou.nl/assets/img/misc/social-thumbnail.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://aichou.nl/">
+    <meta name="twitter:title" content="aichou 桜">
+    <meta name="twitter:description" content="Ik schrijf woorden die alleen computers begrijpen!">
+    <meta name="twitter:image" content="https://aichou.nl/assets/img/misc/social-thumbnail.jpg">
+
+    <!-- Favicon tags -->
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="aichou.nl" />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+    <title>aichou 桜</title>
+
+    <script src="js/pages/index.js"></script>
+    <script src="js/shared.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <canvas id="rainCanvas"></canvas>
+    <div class="container">
+        <header>
+            <div class="ascii-container">
+                <a href="/">
+                    <div class="ascii-box">
+                        <pre>
+　　　　 ／＞　 フ 
+　　　　| 　_　 _|
+ 　　　／`ミ _x 彡
+　 　 /　　　 　 |
+　　 /　 ヽ　　 ﾉ
+／￣|　　 |　|　|
+| (￣ヽ＿_ヽ_)_)
+＼二つ 
+                    </pre>
+                        <pre>
+           _         _      _ 
+     /\   | |       | |    | |
+    /  \  | |__   __| | ___| |
+   / /\ \ | '_ \ / _` |/ _ \ |
+  / ____ \| |_) | (_| |  __/ |
+ /_/    \_\_.__/ \__,_|\___|_|                         
+                    </pre>
+                    </div>
+                </a>
+            </div>
+            <nav>
+                <div class="nav-container">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">Over mij</a></li>
+                        <li><a href="/projects">Projecten</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="layout">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="card discord-status mobile-order-1">
+                    <div class="status-text">
+                        <span class="status-prefix">Ik ben</span>
+                        <div class="status-indicator">
+                            <span class="status-state">OFFLINE</span>
+                            <span class="status-exclaim">!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card status mobile-order-7">
+                    <h3>Status</h3>
+                    <div class="tweet-container">
+                        <div class="profile-image">
+                            <img src="https://pbs.twimg.com/profile_images/1917867843997036544/pnifx-m9_400x400.jpg"
+                                alt="Profile Picture">
+                        </div>
+                        <div class="tweet-content">
+                            <div class="tweet-header">
+                                <span class="display-name">abdel</span>
+                                <span class="username">(@compiledpixel)</span>
+                                <span> • </span><span class="posted-date">1d</span>
+                            </div>
+                            <p class="tweet-text">This is a sample tweet that might be quite long and need to be
+                                truncated after two lines of text because it contains too much information to display in
+                                the limited space.</p>
+                        </div>
+                    </div>
+                </div>
+<!--
+                <div class="card recently-played mobile-order-6">
+                    <h3 class="play-status">Recently played</h3>
+                    <div class="track-container">
+                        <div class="album-art">
+                            <img src="assets/img/misc/music-placeholder.jpg" alt="Album Art" class="current-album-art">
+                        </div>
+                        <div class="track-info">
+                            <span class="track-title">Track Title</span>
+                            <span class="track-artist">Artist Name</span>
+                            <span class="track-last-played" style="display: none;">Last Played</span>
+                        </div>
+                    </div>
+                </div>
+                -->
+                <div class="card links mobile-order-4">
+                    <h3>Links</h3>
+                    <div class="icon-grid">
+                        <a href="https://x.com/compiledpixel" target="_blank" class="icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/compiledpixel" target="_blank" class="icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 32 32">
+                                <path fill="currentColor"
+                                    d="M28.436 15.1c-1.2-.203-2.45-.336-3.466-.372l-.18-.006c.042-.09.073-.15.083-.16c.022-.018.04-.094.042-.168c0-.04.018-.174.046-.35c.276.01.64.018 1.04.02c1.536.013 3.144.137 4.247.332c.657.116.874.112.39-.006c-.492-.12-1.948-.294-3.108-.37a35.645 35.645 0 0 0-2.555-.062c.02-.114.04-.24.064-.37c.092-.504.123-1.01.125-2.017c.002-1.56-.082-1.99-.59-3.024a5.011 5.011 0 0 0-.725-1.104c.247-.73.24-1.858-.015-2.848c-.21-.812-.285-.864-1.02-.708c-.625.133-1.125.314-1.766.637c-.304.153-.722.39-1.025.578c-.79-.277-1.607-.46-2.48-.56c-.883-.1-3.05-.044-3.82.098c-.75.14-1.428.31-2.04.51c-.307-.188-.75-.443-1.068-.603c-.644-.324-1.144-.504-1.77-.637c-.734-.157-.81-.104-1.02.708c-.26 1.003-.262 2.15-.005 2.878c.03.083.048.142.055.188c-1.042 1.312-1.382 2.78-1.156 4.83c.06.533.15 1.023.278 1.472c-.665-.004-1.61.02-2.294.064c-1.162.077-2.618.25-3.11.37c-.483.117-.268.12.39.006c1.103-.194 2.712-.32 4.248-.33c.29-.002.56-.008.794-.014c.07.237.15.463.24.678H7.26c-1.015.036-2.264.17-3.465.37c-.9.152-2.23.454-2.386.54c-.164.092-.03.072.667-.105c1.273-.322 2.928-.57 4.978-.74l.23-.02c.44 1.02 1.117 1.8 2.075 2.41c.586.372 1.525.755 1.998.815c.13.016.508.094.84.172c.333.078.984.195 1.446.262h.01l-.024.016c-.56.29-.924.744-1.17 1.457c-.11.033-.246.078-.394.13c-.53.18-.735.216-1.27.22c-.557.004-.69-.02-1.02-.176a2.968 2.968 0 0 1-1.234-1.134c-.5-.826-1.367-1.41-2.09-1.41c-.616 0-.733.25-.287.615c.672.55 1.174 1.11 1.38 1.538l.397.824c.11.227.342.535.564.748c.522.498 1.026.736 1.778.848c.504.074.628.074 1.223-.002c.287-.035.53-.076.746-.127v.854c0 1.766-.02 2.334-.09 2.5c-.133.316-.43.64-.717.787c-.287.147-.376.308-.255.456c.068.08.197.094.63.066c.822-.05 1.403-.355 1.7-.89c.094-.173.116-.52.146-2.32c.032-1.952.046-2.14.173-2.42c.076-.165.187-.345.25-.394c.103-.086.11.084.11 2.42c0 2.578-.027 2.89-.285 3.385c-.058.113-.168.26-.245.33c-.135.123-.192.438-.098.533c.155.154.932-.088 1.356-.422c.722-.572.808-1.045.814-4.46l.003-2.005l.22.02l.218.02l.036 2.62c.04 2.952.046 2.995.548 3.565c.285.322.572.5 1.04.64c.624.187.812-.103.392-.606c-.457-.548-.48-.757-.454-3.995c.017-2.076.017-2.076.15-1.955c.283.256.337.676.337 2.623c0 2.418.07 2.648.923 3.07c.4.195.51.22 1.022.22c.544.003.577-.005.597-.147c.017-.115-.05-.193-.304-.348a1.741 1.741 0 0 1-.708-.797c-.055-.126-.092-.958-.117-2.67c-.036-2.394-.044-2.503-.193-2.878c-.2-.504-.508-.902-.897-1.166c-.1-.066-.202-.12-.333-.162c.16-.016.317-.033.468-.055c1.572-.21 2.403-.384 3.07-.642c1.41-.543 2.365-1.445 2.882-2.724c.046-.114.092-.222.13-.31l.4.034c2.05.173 3.705.42 4.978.743c.698.178.83.2.668.106c-.152-.085-1.482-.386-2.382-.537zm-6.014-.032c-.233.512-.883 1.17-1.408 1.428c-.518.256-1.33.45-2.25.544c-.63.064-4.137.083-4.716.026c-1.917-.188-2.99-.557-3.783-1.296c-.75-.702-1.1-1.655-1.04-2.828c.04-.734.217-1.195.68-1.755c.42-.51.864-.825 1.386-.985c.438-.134 1.78-.146 3.582-.03c.797.05 1.456.05 2.252 0c1.886-.12 3.145-.106 3.61.038c.73.226 1.397.834 1.797 1.644c.18.362.216.516.242 1.075c.036.77-.097 1.587-.35 2.138zm-9.51-3.306c-1.073-.188-1.686 1.65-.863 2.587c.39.444.737.517 1.17.247c.403-.25.62-.72.62-1.328c0-.812-.368-1.408-.928-1.508zm6.513.11c-1.073-.188-1.687 1.647-.864 2.586c.393.445.74.52 1.174.247c.4-.25.62-.72.62-1.328c0-.808-.37-1.406-.93-1.505zm-2.886 3.612c-.024.074-.136.184-.25.243c-.285.147-.49.096-.793-.18c-.187-.168-.272-.257-.33-.08c-.052.164.28.493.538.594c.236.095.405.098.66-.01c.255-.105.477-.39.477-.575c0-.172-.247-.164-.303.01zm-.318-.575c.163-.145.2-.44.044-.598s-.473-.133-.597.043c-.145.206-.068.363.035.53c.16.124.375.15.517.024z" />
+                            </svg>
+                        </a>
+                        <a href="https://discordapp.com/users/272796067140075520" target="_blank" class="icon-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 32 32">
+                                <path fill="currentColor"
+                                    d="M12.656 4.906L11.875 5s-3.504.383-6.063 2.438h-.03l-.032.03c-.574.528-.824 1.177-1.219 2.126a30.69 30.69 0 0 0-1.187 3.5C2.602 15.777 2 19.027 2 22v.25l.125.25c.926 1.625 2.57 2.66 4.094 3.375c1.523.715 2.84 1.094 3.75 1.125l.594.031l.312-.531l1.094-1.938c1.16.262 2.496.438 4.031.438c1.535 0 2.871-.176 4.031-.438l1.094 1.938l.313.531l.593-.031c.91-.031 2.227-.41 3.75-1.125c1.524-.715 3.168-1.75 4.094-3.375l.125-.25V22c0-2.973-.602-6.223-1.344-8.906a30.69 30.69 0 0 0-1.187-3.5c-.395-.95-.645-1.598-1.219-2.125l-.031-.032h-.032C23.63 5.383 20.125 5 20.125 5l-.781-.094l-.282.719s-.289.73-.468 1.563A20.095 20.095 0 0 0 16 7c-.535 0-1.46.035-2.594.188a11.245 11.245 0 0 0-.469-1.563zm-1.375 2.282c.043.14.086.261.125.375c-1.293.32-2.672.808-3.937 1.593l1.062 1.688C11.125 9.234 14.851 9 16 9c1.148 0 4.875.234 7.469 1.844l1.062-1.688c-1.265-.785-2.644-1.273-3.937-1.594c.039-.113.082-.234.125-.375c.933.188 2.715.618 4.187 1.782c-.008.004.375.582.719 1.406c.352.848.742 1.977 1.094 3.25c.676 2.441 1.207 5.414 1.25 8.031c-.63.961-1.797 1.828-3.032 2.407a9.744 9.744 0 0 1-2.437.78L22 24c.297-.11.59-.23.844-.344c1.539-.676 2.375-1.406 2.375-1.406l-1.313-1.5s-.562.516-1.875 1.094C20.72 22.422 18.715 23 16 23s-4.719-.578-6.031-1.156c-1.313-.578-1.875-1.094-1.875-1.094l-1.313 1.5s.836.73 2.375 1.406c.254.114.547.235.844.344l-.5.844a9.744 9.744 0 0 1-2.438-.782c-1.234-.578-2.402-1.445-3.03-2.406c.042-2.617.573-5.59 1.25-8.031a28.663 28.663 0 0 1 1.093-3.25c.344-.824.727-1.402.719-1.406c1.472-1.164 3.254-1.594 4.187-1.781zM12.5 14c-.773 0-1.457.441-1.875 1c-.418.559-.625 1.246-.625 2s.207 1.441.625 2c.418.559 1.102 1 1.875 1c.773 0 1.457-.441 1.875-1c.418-.559.625-1.246.625-2s-.207-1.441-.625-2c-.418-.559-1.102-1-1.875-1zm7 0c-.773 0-1.457.441-1.875 1c-.418.559-.625 1.246-.625 2s.207 1.441.625 2c.418.559 1.102 1 1.875 1c.773 0 1.457-.441 1.875-1c.418-.559.625-1.246.625-2s-.207-1.441-.625-2c-.418-.559-1.102-1-1.875-1zm-7 2c.055 0 .125.02.25.188c.125.167.25.46.25.812c0 .352-.125.645-.25.813c-.125.167-.195.187-.25.187c-.055 0-.125-.02-.25-.188A1.401 1.401 0 0 1 12 17c0-.352.125-.645.25-.813c.125-.167.195-.187.25-.187zm7 0c.055 0 .125.02.25.188c.125.167.25.46.25.812c0 .352-.125.645-.25.813c-.125.167-.195.187-.25.187c-.055 0-.125-.02-.25-.188A1.401 1.401 0 0 1 19 17c0-.352.125-.645.25-.813c.125-.167.195-.187.25-.187z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="infinite-scroll-container cool-sites mobile-order-9">
+                    <span class="cool-sites-pointer"><i>cool sites! →</i></span>
+                    <div class="scroll-wrapper">
+                        <div class="scroll-content">
+                            <a><img src="https://dimden.dev/services/images/88x31.gif"
+                                    alt="dimden.dev"></a>
+                            <a><img
+                                    src="https://melankorin.net/assets/img/buttons/button-1.gif"
+                                    alt="melankorin.net"></a>
+                            <a><img src="assets/img/buttons/sites/jesx.gif" alt="jesx.dev"></a>
+                            <a><img src="https://nekoweb.org/assets/buttons/button6.gif"
+                                    alt="nekoweb.org"></a>
+                            <!-- Duplicate set for seamless loop -->
+                            <a><img src="https://dimden.dev/services/images/88x31.gif"
+                                    alt="dimden.dev"></a>
+                            <a><img
+                                    src="https://melankorin.net/assets/img/buttons/button-1.gif"
+                                    alt="melankorin.net"></a>
+                            <a><img src="assets/img/buttons/sites/jesx.gif" alt="jesx.dev"></a>
+                            <a><img src="https://nekoweb.org/assets/buttons/button6.gif"
+                                    alt="nekoweb.org"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="infinite-scroll-container random-buttons mobile-order-10">
+                    <div class="scroll-wrapper">
+                        <div class="scroll-content-2">
+                            <img src="assets/img/buttons/blink-0.gif" alt="blink.gif"></a>
+                            <img src="assets/img/buttons/winrar.gif" alt="winrar.gif"></a>
+                            <img src="assets/img/buttons/iestop.gif" alt="iestop.gif"></a>
+                            <img src="assets/img/buttons/heart.gif" alt="heart.gif"></a>
+                            <img src="assets/img/buttons/made_with_windows.gif" alt="made_with_windows.gif"></a>
+                            <img src="assets/img/buttons/kawaiibutton.gif" alt="kawaiibutton.gif"></a>
+                            <img src="assets/img/buttons/corp.gif" alt="corp.gif"></a>
+                            <!-- Duplicate set for seamless loop -->
+                            <img src="assets/img/buttons/blink-0.gif" alt="blink.gif"></a>
+                            <img src="assets/img/buttons/winrar.gif" alt="winrar.gif"></a>
+                            <img src="assets/img/buttons/iestop.gif" alt="iestop.gif"></a>
+                            <img src="assets/img/buttons/heart.gif" alt="heart.gif"></a>
+                            <img src="assets/img/buttons/made_with_windows.gif" alt="made_with_windows.gif"></a>
+                            <img src="assets/img/buttons/kawaiibutton.gif" alt="kawaiibutton.gif"></a>
+                            <img src="assets/img/buttons/corp.gif" alt="corp.gif"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card 88x31 site-button mobile-order-11">
+                    <h3>My Button</h3>
+                    <div class="hotlink-container">
+                        <div class="small-image-container">
+                            <img src="assets/img/88x31.gif" alt="88x31">
+                            <div class="button-code">
+                                <code>&lt;a href="https://aichou.nl"&gt;&lt;img src="https://aichou.nl/assets/img/88x31.gif"&gt;&lt;/a&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotlink-text">
+                        <p class="clickable">Hotlink mijn button! [?]</p>
+                        <div class="dropdown-content">
+                            <p>Ik heb oneindig bandbreedte op mijn site & ik wil anderen niet hoeven vragen om de knop te updaten wanneer ik 'm verander.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card site-stats mobile-order-12">
+                    <h3>Site Statistieken</h3>
+                    <div class="stats-list">
+                        <div class="stat-item">
+                            <span class="stat-name">Totale views:</span>
+                            <span class="stat-value-total">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-name">Unieke bezoekers:</span>
+                            <span class="stat-value-unique">0</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <div class="card about mobile-order-2">
+                    <h3>Over mij</h3>
+                    <p>
+                        Heey, Ik ben Abdel! Ik ben een software developer & een UI designer. Je kunt mijn volledige, meer professionele bio <a href="/about">hier lezen</a>!
+                    </p>
+                    <div class="about-facts-list">
+                        <p><b>Een aantal korte feitjes over mij:</b></p>
+                        <ul>
+                            <li>Ik woon in Utrecht, Nederland.</li>
+                            <li>Ik werk momenteel full-time als ICT medewerker bij een Nederlandse MSP</li>
+                            <li>Mijn hoofdtalen zijn <span style="color:#007d9c">GOLANG</span>, <span
+                                    style="color:#f7e025">JavaScript</span> & <span
+                                    style="color:#2d79c7">TypeScript</span>.</li>
+                            <li>Ik begon te coderen toen ik 6 jaar oud was met <span style="color:#8965ff">HTML & CSS</span>.</li>
+                            <li>In mijn vrije tijd ontwerp ik voor en run ik een bedrijfje genaamd <a
+                                    href="https://innovatieweb.nl">Innovatieweb</a>.</li>
+                            <li>I hou van katten!</li>
+                            <li>I hou niet van thee.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card posts mobile-order-3">
+                    <h3>Recente posts</h3>
+                    <ul>
+                        <div id="blog-index"></div>
+                    </ul>
+                </div>
+                <div class="card status mobile-order-5">
+                    <h3>Status</h3>
+                    <div class="status-items">
+                        <div class="status-item" data-service="aichou.nl (website)">
+                            <span class="service">aichou.nl</span>
+                            <span class="state ok">[ OK ]</span>
+                        </div>
+                        <div class="status-item" data-service="innovatieweb.nl (website)">
+                            <span class="service">innovatieweb.nl</span>
+                            <span class="state ok">[ OK ]</span>
+                        </div>
+                        <div class="status-item" data-service="dungeon bot">
+                            <span class="service">discord bot</span>
+                            <span class="state ok">[ OK ]</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card chat mobile-order-8">
+                    <h3>Chat</h3>
+                    <div class="chat-container">
+                        <div class="messages">
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" placeholder="Use /nick to set a name">
+                            <button>&gt;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="admin-link">
+        <a href="/admin">Admin</a>
+    </div>
+    <div class="site-settings">
+        <div class="settings-tab">⚙</div>
+        <div class="settings-panel">
+            <h4>Weer Effecten</h4>
+            <button id="disableWeather" class="weather-disable">Weer Uitschakelen</button>
+            <label>
+                <input type="checkbox" id="rainToggle" checked>
+                Regen
+            </label>
+            <label>
+                <input type="checkbox" id="snowToggle">
+                Sneeuw
+            </label>
+            <div class="speed-control">
+                <label for="weatherSnelheid">Snelheid</label>
+                <input type="range" id="weatherSnelheid" min="0.2" max="3.0" step="0.1" value="1.0">
+                <span id="speedValue">1x</span>
+            </div>
+            <hr>
+            <h4>Overig</h4>
+            <label>
+                <input type="checkbox" id="chatSoundToggle" checked>
+                Chat Meldingen Geluid
+            </label>
+        </div>
+    </div>
+    <script src="js/oneko.js" data-cat="/assets/fonts/oneko.gif"></script>
+    <div class="loading-overlay">
+        <div class="loading-content">
+            <div class="spinner"></div>
+        </div>
+    </div>
+</body>
+
+</html>

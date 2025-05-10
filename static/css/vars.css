@@ -1,9 +1,0 @@
-:root {
-	/**
-	 * These fonts are broken out into two separate variables from a previous iteration. I left
-	 * it in because it's nice to be able to split out the heading and body fonts.
-	 */
-	--accentFont: 'Atkinson Hyperlegible', Georgia, Times, serif;
-	--primaryFont: 'Atkinson Hyperlegible', sans-serif;
-	--codeFont: 'Fira Code', monospace;
-}
